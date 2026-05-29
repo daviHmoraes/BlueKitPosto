@@ -4,8 +4,8 @@ import model.exceptions.AppException;
 
 public class Fornecedor {
 
-    private final int id;
-    private static int idContador = 1;
+    private final long id;
+    private static long idContador = 1;
     private String razaoSocial;
     private String cnpj;
     private Combustivel combustivelFornecido;
@@ -19,7 +19,7 @@ public class Fornecedor {
 
     // |----------| Getters e Setters |----------|
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
