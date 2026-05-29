@@ -9,8 +9,8 @@ import java.time.LocalDateTime;
 
 public class Venda {
 
-    private final int id;
-    private static int idContador = 1;
+    private final long id;
+    private static long idContador = 1;
     private final LocalDateTime dataHora;
     private Bomba bomba;
     private Funcionario funcionario;
@@ -31,7 +31,7 @@ public class Venda {
     // |----------| Getters e Setters |----------|
 
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

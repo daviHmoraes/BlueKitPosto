@@ -1,11 +1,11 @@
-package model.entity;
+package model.entity.cliente;
 
 import model.exceptions.AppException;
 
 public class Cliente {
 
-    private final int id;
-    private static int idContador = 1;
+    private final long id;
+    private static long idContador = 1;
     private String nome;
     private String cpf;
     private Veiculo veiculo;
@@ -19,7 +19,7 @@ public class Cliente {
 
     // |-----------| Getters Setters |-----------|
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
